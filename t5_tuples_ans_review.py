@@ -15,7 +15,7 @@ print(town1, town2, town3, sep="\n")
 
 # ### Exercise 2 ###
 # 1. Using tuple() and a string literal, create a tuple called `my_devices`
-# that contains "laptop", "cellphone" and "camera".
+# that contains 3 elements: "laptop", "cellphone", "camera".
 my_devices = ("laptop", "cellphone", "camera")
 
 # 2. Check whether the "smartwatch" is in `my_devices` using the `in` keyword and

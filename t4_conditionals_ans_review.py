@@ -105,7 +105,7 @@ else:
 
 # 7
 # Create a range of values 0 to 20 (inclusive of 20).
-# Write a `for loop` to iterate over the values to to evaluate each value 
+# Write a `for loop` to iterate over the values to evaluate each value 
 # using the following conditions:
 
     ## If 1 == 0, print (f"{value} is first value")

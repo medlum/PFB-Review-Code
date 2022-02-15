@@ -18,7 +18,7 @@ while num < 6:
 # Prompt a user to enter user id with a message:
 # `Enter your user id : ` and assign the input to a variable `user_input`
 # Check if the user input is equal to `ba_admin` 
-# You assigned `ba_admin` to a variable `user_id`
+# You can assign `ba_admin` to a variable `user_id`
 # If the user input values did not match "ba_admin", the program will 
 # keep looping to prompt user with a message - "Incorrect id, enter again: "
 # When the user input match "ba_admin",  it will print - "Log in successful!"  
@@ -58,7 +58,7 @@ for letter in enumerate("expresso"):
 
 # 4
 # Check the documentation of `enumerate` function to find out 
-# how to change the start index (default to 0) andrewrite the 
+# how to change the start index (default to 0) and rewrite the 
 # `for loop` to start index at 1.
 # Output should display:
 

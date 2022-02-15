@@ -15,8 +15,8 @@ print(apparel[0:2])
 print(apparel[-1])
 
 ### Exercise 2 ###
-# Create a list called sports_list from the string "running, cycling, swimming" 
-# with the string .split() method.
+# Create a single string: "running, cycling, swimming" 
+# Split the single using .split() method and assign to a variable: sports_list
 sports_list = "running, cycling, swimming".split(",")
 
 # Verify that sports has three items using len().

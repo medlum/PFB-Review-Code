@@ -1,11 +1,11 @@
-#1. Create 1st variable `num_1` and assigned with a value of 5 billion using 
+#1. Create 1st variable `num_1` and assign with a value of 5 billion using 
 # an underscore '_' to separate every 3 zeros.
 num_1 = 5_000_000_000
 
-#2. Create 2nd variable `num_2` and assigned 100.50 to the variable.
+#2. Create 2nd variable `num_2` and assign 100.50 to the variable.
 num_2 = 100.50
 
-#3. Create 3rd variable `num_3` and assigned "200.50" to the variable
+#3. Create 3rd variable `num_3` and assign "200.50" to the variable
 num_3 = "200.50"
 
 #4. Check the data type of `num_1`, `num_2`, `num_3`.
@@ -20,7 +20,7 @@ print(type(num_3))
 # Convert the string to a float before addition.
 print(num_1 + float(num_3))
 
-#6. Create 4th variable `num_4` and assigned 50 to the variable.
+#6. Create 4th variable `num_4` and assign 50 to the variable.
 num_4 = 50
 
 #7. What is the value of an integer division of `num_2` by `num_4`?

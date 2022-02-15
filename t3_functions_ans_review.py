@@ -8,7 +8,7 @@ print(math.sqrt(450))
 from math import floor
 print(floor(423.89))
 
-# 3. Which Python function allow you to list all the functions 
+# 3. Which Python function allows you to list all the functions 
 # available in math library?
 print(dir(math))
 
