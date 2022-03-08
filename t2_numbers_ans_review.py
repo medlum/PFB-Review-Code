@@ -15,10 +15,10 @@ print(type(num_2))
 print(type(num_3))
 
 #5. 
-# Add `num_1` and `num_3` with an addition operation. 
+# Add `num_2` and `num_3` with an addition operation. 
 # The result should return 301.00.
 # Convert the string to a float before addition.
-print(num_1 + float(num_3))
+print(num_2 + float(num_3))
 
 #6. Create 4th variable `num_4` and assign 50 to the variable.
 num_4 = 50
