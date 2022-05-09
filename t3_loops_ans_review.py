@@ -9,10 +9,12 @@
     ## Double of loop 4 is 8
     ## Double of loop 5 is 10
 
-num = 1
-while num < 6:
-    print(f"Double of loop {num} is {num * 2}")
-    num += 1
+def loop():
+    num = 1
+    while num < 6:
+        print(f"Double of loop {num} is {num * 2}")
+        num += 1
+loop()
 
 # 2
 # Prompt a user to enter user id with a message:
