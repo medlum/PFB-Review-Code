@@ -24,9 +24,8 @@ print((True and False) == (True and False))
 print(not (True and "A" == "B"))
 
 # 3 
-# Write a conditional statement to print `business and accountancy` if 
-# a string is equal to `business and accountancy`, 
-# otherwise print `invalid entry`.
+# Write a conditional statement to evaluate if the school variable contains `business and accountancy`. 
+# If the evaluation is true, print `business and accountancy`, else print `invalid entry`.
 
 school = "business and accountancy"
 
@@ -36,14 +35,12 @@ else:
     print("invalid entry")
 
 # 4 
-# Write a conditional statement to evaluate the price of an apple and 
-# and orange. 
-# If the price of apple is greater than orange, print 
-# "apple price is higher than orange". 
-# If the price of apple is greater than orange, print 
-# "apple price is lower than orange". 
-# Otherwise, print "apple and orange prices are equal".
+# Write a conditional statement to evaluate the price of an apple and orange. 
+# If the price of apple is greater than orange, print "apple price is higher than orange". 
+# If the price of apple is greater than orange, print "apple price is lower than orange". 
+# Otherwise, print "apple and orange prices are equal" 
 
+# Test your conditions by assigning different values to 2 variables, example:
 apple_price = 0.74
 orange_price = 0.74
 
@@ -55,12 +52,12 @@ else:
     print("apple and orange prices are equal")
 
 # 5
-# Write a conditional statement to evaluate the following conditions 
-# of a variable `height`:
+# Write a conditional statement to evaluate the following conditions of a variable `height`:
 # If height is greater or equal to 175, print "tall"
 # If height is greater or equal to 165 and less than 175, print "average"
 # If height is less than 165, print "short"
-# Test the condition with 160, 170 and 180 to evaluate the conditional statements
+# Test the condition with 160, 170 and 180 to evaluate the conditional statements, example:
+
 height = 170
 
 # Require the conditions to evaluate from highest to lowest value
@@ -82,13 +79,13 @@ else:
 
 
 # 6 
-# Write a conditional statement to evaluate the following conditions of 2 variables:
-# gender = "male" and hair_length = "long":
+# Write a conditional statement to evaluate the following conditions: 
+    ## gender == "female" and hair_length == "long", print "tie up your hair"
+    ## gender == "female" and hair_length == "short", print "style your hair"
+    ## gender == "male" and hair_length == "long", print "cut your hair"
+    ## gender == "male" and hair_length == "short", print "comb your hair"
 
-    ## If gender = "female" and hair_length = "long", print "tie up your hair"
-    ## If gender = "female" and hair_length = "short", print "style your hair"
-    ## If gender = "male" and hair_length = "long", print "cut your hair"
-    ## If gender = "male" and hair_length = "short", print "comb your hair"
+# Test the conditions to evaluate the conditional statements, example:
 gender = "male" 
 hair_length = "long"
 
@@ -104,13 +101,12 @@ else:
 
 
 # 7
-# Create a range of values 0 to 20 (inclusive of 20).
-# Write a `for loop` to iterate over the values to evaluate each value 
-# using the following conditions:
+# Write a `for loop` to iterate over range(21) to evaluate each value of the range function
+# with the following conditions:
 
-    ## If 1 == 0, print (f"{value} is first value")
-    ## If 10 == 0, print (f"{value} is middle value")
-    ## If 20 == 0, print (f"{value} is last value")
+    ## value == 1, print (f"{value} is first value")
+    ## value == 10 , print (f"{value} is middle value")
+    ## value == 20, print (f"{value} is last value")
 
 # When the program is executed, it should display the output:
     ## 1 is first value
@@ -118,18 +114,18 @@ else:
     ## 20 is last value
 
 for value in range(21):
-    if value - 10 == 0:
-        print(f"{value} is middle value")
-    elif value - 20 == 0:
-        print(f"{value} is last value")
-    elif value - 1 == 0:
+    if value == 1:
         print(f"{value} is first value")
+    elif value == 10:
+        print(f"{value} is middle value")
+    elif value == 20:
+        print(f"{value} is last value")
 
 
 # 8 
-# Create a for loop over range(80, 150).
-# Print a pair of values using enumerate function and break
-# the iteration when the index reach number 20.
+# Create a for loop to iterate over enumerate(range(80, 150)).
+# In each loop, print the index (coming from enumerate() function) and value (coming from range() function) 
+# Break the iteration when the index reach number 20.
 
 for index, value in enumerate(range(80,150)):
     print(index, value)
@@ -137,25 +133,26 @@ for index, value in enumerate(range(80,150)):
         break
 
 # 9 
-# Create a function `height()` to ask a user to input height in metres.
-# "Enter your height in metres : "
+# Create a function `height_func()` to convert height in metres to feet.
+# The function will ask for a user to input the height.
+# You can use: user_input = float(input("Enter your height in metres : ")) to ask user to input height.
+# If the input is string data type, the program should print: "Your input is invalid, please try again".
+# If a user input is float or integer data type, the program will convert input height to feet 
+# and print: "Your height of ___ in metre is ____ in feet." 
+# Note that 1 metre = 3.28084 feet.
+# The function will loop endlessly, prompting the user to input height until the correct data type is entered.
 # The function does not take in any parameters.
-# If a user input is string data type, the program should print:
-# "Your input is invalid, please try again".
-# If a user input is float or integer data type, the program will
-# convert it to feet using 1 metre = 3.28084 feet, before printing 
-# "Your height of ___ in metre is ____ in feet." 
-# The function will loop endlessly, prompting the user to input height
-# until the correct data type is entered.
+# Here is how the program will look like when executed:
 
-    ## Enter your height in metres: two  
+    ## Enter your height in metres: two  (user input height as "two")
     ## Your input is invalid, please try again
-    ## Enter your height in metres: TWO
+    ## Enter your height in metres: TWO  (user input height as "TWO")
     ## Your input is invalid, please try again
-    ## Enter your height in metres: 2
+    ## Enter your height in metres: 2 (user input height as 2)
     ## Your height of 2.0 in metre is 6.56168 in feet.
 
-def height():
+
+def height_func():
     while True:
         try:
             user_input = float(input("Enter your height in metres: "))
@@ -167,7 +164,7 @@ def height():
 
 
 # alternate solution #
-def height():
+def height_func_alt():
     while True:
         try:
             user_input = float(input("Enter your height in metres: "))
